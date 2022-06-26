@@ -1,0 +1,100 @@
+:root{
+    --display-fx: flex;
+    --color-bg1: hsl(0, 0%, 100%);
+    --color-bg2: hsl(228, 12%, 48%);
+    --color-bg3: hsl(212, 21%, 14%);
+    --color-bg4: hsl(158, 36%, 37%);
+    --font-700: 700;
+    --font-500: 500;
+}
+body, main, .container, .content, .price {
+    display: var(--display-fx);
+}
+body, main{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body{
+    background: hsl(30, 38%, 92%);
+}
+.container{
+    flex-direction: row;
+    width: 100vh;
+    height: 70vh;
+}
+.section-1, .section-2{
+    width: 40%;
+    border-radius: 10px;
+}
+.section-1{
+    background: url(img/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.section-2{
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding-left: 15px;
+}
+.content, h1, .paragraph, .button{
+    font-family: 'Montserrat' sans-serif;
+}
+.content{
+    flex-direction: column;
+    margin-left: 15px;
+    margin: 10px;
+}
+h4, .paragraph, sapn{
+    color: hsl(228, 12%, 48%);
+}
+h4, .paragraph, .button{
+    font-weight: 500;
+}
+h4{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+h4, .price{
+    font-family: 'Fraunces' sans-serif;
+}
+h1{
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    margin-top: -5px;
+}
+.paragraph{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: -2px;
+    margin-bottom: 3vh;
+    line-height: 23px;
+}
+.price{
+    align-items: center;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+span{
+    font-size: 14px;
+    margin-left: 25px;
+    text-decoration: line-through;
+}
+.button {
+    background-color:   hsl(158, 34%, 20%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
